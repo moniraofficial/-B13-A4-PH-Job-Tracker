@@ -28,6 +28,23 @@
 
     <hr style="width: 80%; margin: 20px auto; border: 1px solid #e2e8f0;">
 
+    <main class="w-[80%] mx-auto">
+
+<div class="flex justify-between items-center mb-4">
+    <h3 class="text-xl font-semibold text-slate-700">Available Jobs</h3>
+    <span id="tab-count" class="text-slate-500 text-sm">8 Jobs</span>
+</div>    
+
+<div class="flex gap-2 mb-6">
+    <button onclick="switchTab('all')" id="tab-all" class="px-4 py-2 bg-blue-600 text-white rounded-md">All</button>
+    <button onclick="switchTab('interview')" id="tab-interview" class="px-4 py-2 bg-white border rounded-md">Interview</button>
+    <button onclick="switchTab('rejected')" id="tab-rejected" class="px-4 py-2 bg-white border rounded-md">Rejected</button>
+</div>
+
+<div id="job-container" class="space-y-4">
+    </div>
+</main>
+
 <script src="./script.js"></script>
 </body>
 </html>
